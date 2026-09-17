@@ -22,6 +22,15 @@
     <atom:link href="https://johnmacgaffey.github.io/pop-culture-digest/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Pop Culture Digest · Thu Sep 17, 2026</title>
+      <description>Resident Evil opens tomorrow on a 97% RT wave; Swift's 58 MVs hit Spotify; Jimin's Like Crazy hits 1B streams; UMG sues DistroKid; Idol moves to Georgia; Cavill's In the Grey tops Starz.</description>
+      <pubDate>Thu, 17 Sep 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">pop-culture-digest-2026-09-17</guid>
+      <enclosure url="https://johnmacgaffey.github.io/pop-culture-digest/episodes/2026-09-17.mp3" length="1456128" type="audio/mpeg"/>
+      <itunes:duration>4:03</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Pop Culture Digest · Thu Sep 17, 2026</title>
       <description>Pop Culture Digest · Thu Sep 17, 2026</description>
       <pubDate>Thu, 17 Sep 2026 17:00:00 +0000</pubDate>
       <guid isPermaLink="false">pop-culture-digest-2026-09-17-sample</guid>
@@ -31,7 +40,7 @@
     </item>
     <item>
       <title>Pop Culture Digest · Wed Sep 16, 2026</title>
-      <description>Beyoncé charts, Sheeran tour fallout, Hunger Games trailer, Resident Evil reviews, Netflix Sacrifice, and Drake’s FOMO film.</description>
+      <description>Pop Culture Digest · Wed Sep 16, 2026</description>
       <pubDate>Wed, 16 Sep 2026 17:00:00 +0000</pubDate>
       <guid isPermaLink="false">pop-culture-digest-2026-09-16</guid>
       <enclosure url="https://johnmacgaffey.github.io/pop-culture-digest/episodes/2026-09-16.mp3" length="1295280" type="audio/mpeg"/>
