@@ -11,9 +11,9 @@
     <itunes:author>Pop Culture</itunes:author>
     <itunes:summary>Short daily audio digests of the biggest pop culture stories.</itunes:summary>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:category text="News"/>
-    <itunes:category text="Leisure"/>
-        <image>
+    <itunes:category text="TV &amp; Film"/>
+    <itunes:category text="Music"/>
+    <image>
       <url>https://johnmacgaffey.github.io/pop-culture-digest/cover.jpg</url>
       <title>Pop Culture Digest</title>
       <link>https://johnmacgaffey.github.io/pop-culture-digest/</link>
@@ -21,12 +21,21 @@
     <itunes:image href="https://johnmacgaffey.github.io/pop-culture-digest/cover.jpg"/>
     <atom:link href="https://johnmacgaffey.github.io/pop-culture-digest/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>Pop Culture Digest · Thu Sep 17, 2026 (sample)</title>
-      <description>Sample episode: Riot Fest, Chicago Live at Navy Pier, Bears vs Vikings, and what's coming next.</description>
-      <pubDate>Thu, 17 Sep 2026 01:47:48 +0000</pubDate>
-      <guid isPermaLink="false">pop-culture-chicago-2026-09-17-sample</guid>
+      <title>Pop Culture Digest · Thu Sep 17, 2026</title>
+      <description>Pop Culture Digest · Thu Sep 17, 2026</description>
+      <pubDate>Thu, 17 Sep 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">pop-culture-digest-2026-09-17-sample</guid>
       <enclosure url="https://johnmacgaffey.github.io/pop-culture-digest/episodes/2026-09-17-sample.mp3" length="219024" type="audio/mpeg"/>
-      <itunes:duration>0:36</itunes:duration>
+      <itunes:duration>0:37</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Pop Culture Digest · Wed Sep 16, 2026</title>
+      <description>Beyoncé charts, Sheeran tour fallout, Hunger Games trailer, Resident Evil reviews, Netflix Sacrifice, and Drake’s FOMO film.</description>
+      <pubDate>Wed, 16 Sep 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">pop-culture-digest-2026-09-16</guid>
+      <enclosure url="https://johnmacgaffey.github.io/pop-culture-digest/episodes/2026-09-16.mp3" length="1295280" type="audio/mpeg"/>
+      <itunes:duration>3:36</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
     </item>
   </channel>
