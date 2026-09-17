@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Publish one Pop Culture Chicago-events digest episode: TTS -> docs/episodes -> rebuild feed -> git push."""
+"""Publish one Pop Culture Digest episode: TTS -> docs/episodes -> rebuild feed -> git push."""
 from __future__ import annotations
 import argparse, datetime as dt, email.utils, re, subprocess, sys
 from pathlib import Path
@@ -13,7 +13,7 @@ BASE = 'https://johnmacgaffey.github.io/pop-culture-digest'
 COVER = f'{BASE}/cover.jpg'
 TZ = ZoneInfo('America/Chicago')
 VOICE = 'en-US-AndrewNeural'
-SHOW_TITLE = 'Pop Culture — Chicago Events'
+SHOW_TITLE = 'Pop Culture Digest'
 AUTHOR = 'Pop Culture'
 
 def run(cmd, **kw):
@@ -50,7 +50,7 @@ def main():
         print(f'WARNING: episode is {dur_s/60:.1f} min (>5)')
     mins, secs = divmod(int(round(dur_s)), 60)
     duration = f'{mins}:{secs:02d}'
-    title = args.title or f'Pop Culture — Chicago · {today.strftime("%a %b %-d, %Y")}'
+    title = args.title or f'Pop Culture Digest · {today.strftime("%a %b %-d, %Y")}'
     summary = args.summary or script[:280]
 
     items = []
@@ -75,13 +75,13 @@ def main():
                 it_dur = f'{m}:{s:02d}'
             except Exception:
                 it_dur = '0:00'
-            it_title = f'Pop Culture — Chicago · {day.strftime("%a %b %-d, %Y")}'
+            it_title = f'Pop Culture Digest · {day.strftime("%a %b %-d, %Y")}'
             it_sum = it_title
         items.append(f'''    <item>
       <title>{esc(it_title)}</title>
       <description>{esc(it_sum)}</description>
       <pubDate>{email.utils.format_datetime(dt.datetime(day.year, day.month, day.day, 12, 0, tzinfo=TZ).astimezone(dt.timezone.utc))}</pubDate>
-      <guid isPermaLink="false">pop-culture-chicago-{d}</guid>
+      <guid isPermaLink="false">pop-culture-digest-{d}</guid>
       <enclosure url="{BASE}/episodes/{f.name}" length="{sz}" type="audio/mpeg"/>
       <itunes:duration>{it_dur}</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
@@ -96,12 +96,12 @@ def main():
     <link>{BASE}/</link>
     <language>en-us</language>
     <copyright>For John MacGaffey — personal use</copyright>
-    <description>Under-5-minute daily briefing from Pop Culture on major Chicago events: festivals, big concerts, sports, and citywide cultural happenings.</description>
+    <description>Under-5-minute daily audio briefing from Pop Culture on movies, TV, music, celebrities, and culture.</description>
     <itunes:author>{AUTHOR}</itunes:author>
-    <itunes:summary>Short daily audio digests of the major things happening in Chicago.</itunes:summary>
+    <itunes:summary>Short daily audio digests of the biggest pop culture stories.</itunes:summary>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:category text="News"/>
-    <itunes:category text="Leisure"/>
+    <itunes:category text="TV &amp; Film"/>
+    <itunes:category text="Music"/>
     <image>
       <url>{COVER}</url>
       <title>{SHOW_TITLE}</title>
