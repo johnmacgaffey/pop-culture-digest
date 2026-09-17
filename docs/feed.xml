@@ -3,23 +3,29 @@
   xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
   xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Chicago Events Digest</title>
-    <link>https://johnmacgaffey.github.io/chicago-events-digest/</link>
+    <title>Pop Culture — Chicago Events</title>
+    <link>https://johnmacgaffey.github.io/pop-culture-digest/</link>
     <language>en-us</language>
     <copyright>For John MacGaffey — personal use</copyright>
-    <description>Under-5-minute daily briefing on major Chicago events: festivals, big concerts, sports, and citywide cultural happenings.</description>
-    <itunes:author>Chicago Events</itunes:author>
+    <description>Under-5-minute daily briefing from Pop Culture on major Chicago events: festivals, big concerts, sports, and citywide cultural happenings.</description>
+    <itunes:author>Pop Culture</itunes:author>
     <itunes:summary>Short daily audio digests of the major things happening in Chicago.</itunes:summary>
     <itunes:explicit>false</itunes:explicit>
     <itunes:category text="News"/>
     <itunes:category text="Leisure"/>
-    <atom:link href="https://johnmacgaffey.github.io/chicago-events-digest/feed.xml" rel="self" type="application/rss+xml"/>
+        <image>
+      <url>https://johnmacgaffey.github.io/pop-culture-digest/cover.jpg</url>
+      <title>Pop Culture — Chicago Events</title>
+      <link>https://johnmacgaffey.github.io/pop-culture-digest/</link>
+    </image>
+    <itunes:image href="https://johnmacgaffey.github.io/pop-culture-digest/cover.jpg"/>
+    <atom:link href="https://johnmacgaffey.github.io/pop-culture-digest/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>Chicago Events — Thu Sep 17, 2026 (sample)</title>
+      <title>Pop Culture — Chicago · Thu Sep 17, 2026 (sample)</title>
       <description>Sample episode: Riot Fest, Chicago Live at Navy Pier, Bears vs Vikings, and what's coming next.</description>
       <pubDate>Thu, 17 Sep 2026 01:47:48 +0000</pubDate>
-      <guid isPermaLink="false">chicago-events-2026-09-17-sample</guid>
-      <enclosure url="https://johnmacgaffey.github.io/chicago-events-digest/episodes/2026-09-17-sample.mp3" length="219024" type="audio/mpeg"/>
+      <guid isPermaLink="false">pop-culture-chicago-2026-09-17-sample</guid>
+      <enclosure url="https://johnmacgaffey.github.io/pop-culture-digest/episodes/2026-09-17-sample.mp3" length="219024" type="audio/mpeg"/>
       <itunes:duration>0:36</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
     </item>
