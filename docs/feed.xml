@@ -21,8 +21,17 @@
     <itunes:image href="https://johnmacgaffey.github.io/pop-culture-digest/cover.jpg"/>
     <atom:link href="https://johnmacgaffey.github.io/pop-culture-digest/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Pop Culture Digest · Fri Sep 18, 2026</title>
+      <description>Steps trailer, McKellen's Gandalf first look, Tales From '85 S2, BTS's 9B Spotify year, Carly Rae Jepsen's Day and Night, and Crystal Lake at TIFF.</description>
+      <pubDate>Fri, 18 Sep 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">pop-culture-digest-2026-09-18</guid>
+      <enclosure url="https://johnmacgaffey.github.io/pop-culture-digest/episodes/2026-09-18.mp3" length="1441296" type="audio/mpeg"/>
+      <itunes:duration>4:00</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>Pop Culture Digest · Thu Sep 17, 2026</title>
-      <description>Resident Evil opens tomorrow on a 97% RT wave; Swift's 58 MVs hit Spotify; Jimin's Like Crazy hits 1B streams; UMG sues DistroKid; Idol moves to Georgia; Cavill's In the Grey tops Starz.</description>
+      <description>Pop Culture Digest · Thu Sep 17, 2026</description>
       <pubDate>Thu, 17 Sep 2026 17:00:00 +0000</pubDate>
       <guid isPermaLink="false">pop-culture-digest-2026-09-17</guid>
       <enclosure url="https://johnmacgaffey.github.io/pop-culture-digest/episodes/2026-09-17.mp3" length="1456128" type="audio/mpeg"/>
