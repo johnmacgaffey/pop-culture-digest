@@ -21,8 +21,17 @@
     <itunes:image href="https://johnmacgaffey.github.io/pop-culture-digest/cover.jpg"/>
     <atom:link href="https://johnmacgaffey.github.io/pop-culture-digest/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Pop Culture Digest · Mon Sep 21, 2026</title>
+      <description>Resident Evil opens huge; mourning Presley Gerber and Chad Gilbert; Monster tops Netflix; Brothers debuts Wednesday; Sheeran Gaza tour fallout.</description>
+      <pubDate>Mon, 21 Sep 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">pop-culture-digest-2026-09-21</guid>
+      <enclosure url="https://johnmacgaffey.github.io/pop-culture-digest/episodes/2026-09-21.mp3" length="1594512" type="audio/mpeg"/>
+      <itunes:duration>4:26</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>Pop Culture Digest · Fri Sep 18, 2026</title>
-      <description>Steps trailer, McKellen's Gandalf first look, Tales From '85 S2, BTS's 9B Spotify year, Carly Rae Jepsen's Day and Night, and Crystal Lake at TIFF.</description>
+      <description>Pop Culture Digest · Fri Sep 18, 2026</description>
       <pubDate>Fri, 18 Sep 2026 17:00:00 +0000</pubDate>
       <guid isPermaLink="false">pop-culture-digest-2026-09-18</guid>
       <enclosure url="https://johnmacgaffey.github.io/pop-culture-digest/episodes/2026-09-18.mp3" length="1441296" type="audio/mpeg"/>
