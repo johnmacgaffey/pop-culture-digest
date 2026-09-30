@@ -21,8 +21,17 @@
     <itunes:image href="https://johnmacgaffey.github.io/pop-culture-digest/cover.jpg"/>
     <atom:link href="https://johnmacgaffey.github.io/pop-culture-digest/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Pop Culture Digest · Wed Sep 30, 2026</title>
+      <description>Jennifer Lawrence boards Zach Cregger and Spielberg's The Flood; Godzilla Minus Zero earns near-perfect festival reviews; Lindsay Lohan reunites with Mark Waters at Netflix; Verity opens Friday; Disney teases Hexed; Oasis doc hits Disney+ Oct 9.</description>
+      <pubDate>Wed, 30 Sep 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">pop-culture-digest-2026-09-30</guid>
+      <enclosure url="https://johnmacgaffey.github.io/pop-culture-digest/episodes/2026-09-30.mp3" length="1555632" type="audio/mpeg"/>
+      <itunes:duration>4:19</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>Pop Culture Digest · Tue Sep 29, 2026</title>
-      <description>Spider-Man Brand New Day re-release chase, Miley's Bass Persuades No. 1, Shawn Levy's Disney deal, Reacher Season 6, Patient Zero on YouTube, East of Eden Thursday.</description>
+      <description>Pop Culture Digest · Tue Sep 29, 2026</description>
       <pubDate>Tue, 29 Sep 2026 17:00:00 +0000</pubDate>
       <guid isPermaLink="false">pop-culture-digest-2026-09-29</guid>
       <enclosure url="https://johnmacgaffey.github.io/pop-culture-digest/episodes/2026-09-29.mp3" length="1549440" type="audio/mpeg"/>
