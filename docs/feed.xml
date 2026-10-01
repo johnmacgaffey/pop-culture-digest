@@ -22,7 +22,7 @@
     <atom:link href="https://johnmacgaffey.github.io/pop-culture-digest/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Pop Culture Digest · Thu Oct 1, 2026</title>
-      <description>East of Eden lands on Netflix; Miley’s Bass Persuades hits No. 1; Sia sells half her catalog for python3 /home/box/chicago-events-podcast/scripts/publish_episode.py --script /home/box/chicago-events-podcast/episodes/script-2026-10-01.txt --title &quot;Pop Culture Digest · Thu Oct 1, 2026&quot; --summary &quot;East of Eden lands on Netflix; Miley’s Bass Persuades hits No. 1; Sia sells half her catalog for $180M; Raimi’s haunted-house thriller moves to 20th; Jim Carrey marries; BTS tour tops $500M.&quot;80M; Raimi’s haunted-house thriller moves to 20th; Jim Carrey marries; BTS tour tops 00M.</description>
+      <description>East of Eden lands on Netflix; Miley's Bass Persuades hits No. 1; Sia sells half her catalog for $180M; Raimi's haunted-house thriller moves to 20th; Jim Carrey marries; BTS tour tops $500M.</description>
       <pubDate>Thu, 01 Oct 2026 17:00:00 +0000</pubDate>
       <guid isPermaLink="false">pop-culture-digest-2026-10-01</guid>
       <enclosure url="https://johnmacgaffey.github.io/pop-culture-digest/episodes/2026-10-01.mp3" length="1629072" type="audio/mpeg"/>
