@@ -21,8 +21,17 @@
     <itunes:image href="https://johnmacgaffey.github.io/pop-culture-digest/cover.jpg"/>
     <atom:link href="https://johnmacgaffey.github.io/pop-culture-digest/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Pop Culture Digest · Thu Oct 1, 2026</title>
+      <description>East of Eden lands on Netflix; Miley’s Bass Persuades hits No. 1; Sia sells half her catalog for python3 /home/box/chicago-events-podcast/scripts/publish_episode.py --script /home/box/chicago-events-podcast/episodes/script-2026-10-01.txt --title &quot;Pop Culture Digest · Thu Oct 1, 2026&quot; --summary &quot;East of Eden lands on Netflix; Miley’s Bass Persuades hits No. 1; Sia sells half her catalog for $180M; Raimi’s haunted-house thriller moves to 20th; Jim Carrey marries; BTS tour tops $500M.&quot;80M; Raimi’s haunted-house thriller moves to 20th; Jim Carrey marries; BTS tour tops 00M.</description>
+      <pubDate>Thu, 01 Oct 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">pop-culture-digest-2026-10-01</guid>
+      <enclosure url="https://johnmacgaffey.github.io/pop-culture-digest/episodes/2026-10-01.mp3" length="1629072" type="audio/mpeg"/>
+      <itunes:duration>4:32</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>Pop Culture Digest · Wed Sep 30, 2026</title>
-      <description>Jennifer Lawrence boards Zach Cregger and Spielberg's The Flood; Godzilla Minus Zero earns near-perfect festival reviews; Lindsay Lohan reunites with Mark Waters at Netflix; Verity opens Friday; Disney teases Hexed; Oasis doc hits Disney+ Oct 9.</description>
+      <description>Pop Culture Digest · Wed Sep 30, 2026</description>
       <pubDate>Wed, 30 Sep 2026 17:00:00 +0000</pubDate>
       <guid isPermaLink="false">pop-culture-digest-2026-09-30</guid>
       <enclosure url="https://johnmacgaffey.github.io/pop-culture-digest/episodes/2026-09-30.mp3" length="1555632" type="audio/mpeg"/>
