@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Publish one Pop Culture Digest day to the RSS feed.
-Usage: publish.py /workspace/digest-YYYY-MM-DD [--no-push]"""
+Usage: publish.py /workspace/digest-YYYY-MM-DD [--no-push] [--classic]
+Reader layout (content:encoded, clean HTML) is the default when the day folder has content.py;
+--classic forces the old email-HTML description."""
 import sys, os, re, json, glob, shutil, subprocess, html, urllib.request
 from datetime import datetime
 from zoneinfo import ZoneInfo
@@ -55,7 +57,38 @@ def fetch(url, dest):
     with urllib.request.urlopen(req, timeout=30) as r, open(dest, "wb") as f:
         f.write(r.read())
 
-def build_day(src):
+def link_label(fav, name):
+    f = fav.replace("fav_", "").split(".")[0]
+    if f == "youtube": return "Trailer on YouTube" if name.lower() == "trailer" else name + " on YouTube"
+    if f == "spotify": return "Listen on Spotify"
+    return "Read at " + name
+
+def reader_html(src, ds, out):
+    import runpy
+    c = runpy.run_path(os.path.join(src, "content.py"))
+    def img(cid):
+        f = glob.glob(os.path.join(out, "images", cid + ".*"))
+        return (BASE + "/" + ds + "/images/" + os.path.basename(f[0]), f[0]) if f else (None, None)
+    h = []
+    if c.get("intro"): h.append("<p>%s</p>" % c["intro"])
+    for st in c["stories"]:
+        h.append("<h2>%s</h2>" % st["head"])
+        h.append("<p><strong>%s</strong></p>" % html.escape(st.get("cat", "")))
+        u, _ = img(st.get("img", ""))
+        if u: h.append('<img src="%s" alt="%s">' % (u, html.escape(st.get("alt", ""), quote=True)))
+        h += ["<p>%s</p>" % p for p in st.get("paras", [])]
+        if st.get("links"):
+            h.append("<ul>" + "".join('<li><a href="%s">%s</a></li>' % (html.escape(l[2], quote=True), html.escape(link_label(l[0], l[1])))
+                                    for l in st["links"]) + "</ul>")
+    if c.get("bottom"):
+        h.append("<h2>Bottom of the news</h2><ul>" + "".join("<li>%s</li>" % b for b in c["bottom"]) + "</ul>")
+    summary = "Today: " + "; ".join(st.get("head_txt") or re.sub("<[^>]+>", "", st["head"]) for st in c["stories"]) + "."
+    lead = img(c["stories"][0].get("img", ""))
+    enc = {"url": lead[0], "length": os.path.getsize(lead[1]),
+           "type": "image/png" if lead[1].endswith(".png") else "image/jpeg"} if lead[0] else None
+    return "\n".join(h), html.unescape(summary), enc
+
+def build_day(src, reader=True):
     raw = open(os.path.join(src, "digest.html"), encoding="utf-8").read()
     m = re.search(r"<title>([^<]+)", raw)
     title = html.unescape(m.group(1).strip()) if m else "Pop Culture Digest"
@@ -94,6 +127,8 @@ def build_day(src):
     pub = datetime(date.year, date.month, date.day, 8, 0, tzinfo=TZ)
     meta = {"date": ds, "title": title, "link": f"{BASE}/{ds}/",
             "pubDate": format_datetime(pub), "description": body}
+    if reader and os.path.exists(os.path.join(src, "content.py")):
+        meta["content"], meta["summary"], meta["enclosure"] = reader_html(src, ds, out)
     json.dump(meta, open(os.path.join(out, "item.json"), "w"), ensure_ascii=False)
     return ds, problems
 
@@ -101,15 +136,25 @@ def rebuild():
     items = sorted((json.load(open(f)) for f in glob.glob(os.path.join(ROOT, "*/item.json"))),
                    key=lambda i: i["date"], reverse=True)
     x = ['<?xml version="1.0" encoding="UTF-8"?>',
-         '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel>',
+         '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/"><channel>',
          '<title>Pop Culture Digest</title>', f'<link>{BASE}/</link>',
          '<description>John\'s daily pop culture magazine.</description><language>en-us</language>',
          f'<atom:link href="{BASE}/feed.xml" rel="self" type="application/rss+xml"/>']
+    cd = lambda t: "<![CDATA[%s]]>" % t.replace("]]>", "]]]]><![CDATA[>")
     for i in items:
-        x.append("<item><title>%s</title><link>%s</link><guid isPermaLink=\"true\">%s</guid>"
-                 "<pubDate>%s</pubDate><description><![CDATA[%s]]></description></item>" % (
-            html.escape(i["title"]), i["link"], i["link"], i["pubDate"],
-            i["description"].replace("]]>", "]]]]><![CDATA[>")))
+        e = ["<item>", "<title>%s</title>" % html.escape(i["title"]), "<link>%s</link>" % i["link"],
+             '<guid isPermaLink="true">%s</guid>' % i["link"], "<pubDate>%s</pubDate>" % i["pubDate"]]
+        if i.get("content"):
+            e.append("<description>%s</description>" % html.escape(i["summary"]))
+            e.append("<content:encoded>%s</content:encoded>" % cd(i["content"]))
+            if i.get("enclosure"):
+                en = i["enclosure"]
+                e.append('<enclosure url="%s" length="%d" type="%s"/>' % (en["url"], en["length"], en["type"]))
+                e.append('<media:content url="%s" medium="image" type="%s"/>' % (en["url"], en["type"]))
+        else:
+            e.append("<description>%s</description>" % cd(i["description"]))
+        e.append("</item>")
+        x.append("".join(e))
     x.append("</channel></rss>")
     open(os.path.join(ROOT, "feed.xml"), "w", encoding="utf-8").write("\n".join(x))
     lis = "".join(f'<li><a href="{i["date"]}/">{html.escape(i["title"])}</a></li>' for i in items)
@@ -125,7 +170,7 @@ def main():
     push = "--no-push" not in sys.argv
     probs = []
     for src in args:
-        ds, p = build_day(os.path.abspath(src)); probs += p; print("built", ds)
+        ds, p = build_day(os.path.abspath(src), reader="--classic" not in sys.argv); probs += p; print("built", ds)
     rebuild()
     for p in probs: print("WARN", p)
     if push:
