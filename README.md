@@ -1,6 +1,5 @@
 # Pop Culture Digest
 
-Daily under-5-minute audio briefing on movies, TV, music, celebrities, and culture — the podcast companion to Pop Culture’s morning digest.
+RSS feed of the daily Pop Culture Digest email: https://johnmacgaffey.github.io/pop-culture-digest/feed.xml
 
-**RSS feed:** https://johnmacgaffey.github.io/pop-culture-digest/feed.xml  
-**Cover:** https://johnmacgaffey.github.io/pop-culture-digest/cover.jpg
+Publish a day: `python3 publish.py /workspace/digest-YYYY-MM-DD`
