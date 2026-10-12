@@ -108,7 +108,7 @@ def main():
       <link>{BASE}/</link>
     </image>
     <itunes:image href="{COVER}"/>
-    <atom:link href="{BASE}/feed.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="{BASE}/podcast.xml" rel="self" type="application/rss+xml"/>
 {chr(10).join(items)}
   </channel>
 </rss>
@@ -119,7 +119,7 @@ def main():
          'commit', '-m', f'Publish episode {slug}'])
     run(['git', '-C', str(ROOT), 'push', 'origin', 'HEAD'])
     print(f'Published {title} ({duration})')
-    print(f'Feed: {BASE}/feed.xml')
+    print(f'Feed: {BASE}/podcast.xml')
     print(f'Audio: {BASE}/episodes/{mp3.name}')
     print(f'Cover: {COVER}')
 
