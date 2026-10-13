@@ -21,8 +21,17 @@
     <itunes:image href="https://johnmacgaffey.github.io/pop-culture-digest/cover.jpg"/>
     <atom:link href="https://johnmacgaffey.github.io/pop-culture-digest/podcast.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Pop Culture Digest · Tue Oct 13, 2026</title>
+      <description>Netflix lands 2030 World Cup rights in Spain; Shakira closes Madrid; Gerwig Narnia trailer day; DuVernay says Hollywood is over; Wu-Tang Disciple hits Netflix Oct 16.</description>
+      <pubDate>Tue, 13 Oct 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">pop-culture-digest-2026-10-13</guid>
+      <enclosure url="https://johnmacgaffey.github.io/pop-culture-digest/episodes/2026-10-13.mp3" length="1385280" type="audio/mpeg"/>
+      <itunes:duration>3:51</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>Pop Culture Digest · Mon Oct 12, 2026</title>
-      <description>VMAs history for Taylor Swift, Other Mommy tops the box office, Resident Evil sets a franchise record, Digger sinks deeper, and Affleck dominates Netflix.</description>
+      <description>Pop Culture Digest · Mon Oct 12, 2026</description>
       <pubDate>Mon, 12 Oct 2026 17:00:00 +0000</pubDate>
       <guid isPermaLink="false">pop-culture-digest-2026-10-12</guid>
       <enclosure url="https://johnmacgaffey.github.io/pop-culture-digest/episodes/2026-10-12.mp3" length="1438128" type="audio/mpeg"/>
@@ -63,114 +72,6 @@
       <guid isPermaLink="false">pop-culture-digest-2026-10-05</guid>
       <enclosure url="https://johnmacgaffey.github.io/pop-culture-digest/episodes/2026-10-05.mp3" length="1713600" type="audio/mpeg"/>
       <itunes:duration>4:46</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Pop Culture Digest · Fri Oct 2, 2026</title>
-      <description>Pop Culture Digest · Fri Oct 2, 2026</description>
-      <pubDate>Fri, 02 Oct 2026 17:00:00 +0000</pubDate>
-      <guid isPermaLink="false">pop-culture-digest-2026-10-02</guid>
-      <enclosure url="https://johnmacgaffey.github.io/pop-culture-digest/episodes/2026-10-02.mp3" length="1595088" type="audio/mpeg"/>
-      <itunes:duration>4:26</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Pop Culture Digest · Thu Oct 1, 2026</title>
-      <description>Pop Culture Digest · Thu Oct 1, 2026</description>
-      <pubDate>Thu, 01 Oct 2026 17:00:00 +0000</pubDate>
-      <guid isPermaLink="false">pop-culture-digest-2026-10-01</guid>
-      <enclosure url="https://johnmacgaffey.github.io/pop-culture-digest/episodes/2026-10-01.mp3" length="1629072" type="audio/mpeg"/>
-      <itunes:duration>4:32</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Pop Culture Digest · Wed Sep 30, 2026</title>
-      <description>Pop Culture Digest · Wed Sep 30, 2026</description>
-      <pubDate>Wed, 30 Sep 2026 17:00:00 +0000</pubDate>
-      <guid isPermaLink="false">pop-culture-digest-2026-09-30</guid>
-      <enclosure url="https://johnmacgaffey.github.io/pop-culture-digest/episodes/2026-09-30.mp3" length="1555632" type="audio/mpeg"/>
-      <itunes:duration>4:19</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Pop Culture Digest · Tue Sep 29, 2026</title>
-      <description>Pop Culture Digest · Tue Sep 29, 2026</description>
-      <pubDate>Tue, 29 Sep 2026 17:00:00 +0000</pubDate>
-      <guid isPermaLink="false">pop-culture-digest-2026-09-29</guid>
-      <enclosure url="https://johnmacgaffey.github.io/pop-culture-digest/episodes/2026-09-29.mp3" length="1549440" type="audio/mpeg"/>
-      <itunes:duration>4:18</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Pop Culture Digest · Mon Sep 28, 2026</title>
-      <description>Pop Culture Digest · Mon Sep 28, 2026</description>
-      <pubDate>Mon, 28 Sep 2026 17:00:00 +0000</pubDate>
-      <guid isPermaLink="false">pop-culture-digest-2026-09-28</guid>
-      <enclosure url="https://johnmacgaffey.github.io/pop-culture-digest/episodes/2026-09-28.mp3" length="1742688" type="audio/mpeg"/>
-      <itunes:duration>4:50</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Pop Culture Digest · Fri Sep 25, 2026</title>
-      <description>Pop Culture Digest · Fri Sep 25, 2026</description>
-      <pubDate>Fri, 25 Sep 2026 17:00:00 +0000</pubDate>
-      <guid isPermaLink="false">pop-culture-digest-2026-09-25</guid>
-      <enclosure url="https://johnmacgaffey.github.io/pop-culture-digest/episodes/2026-09-25.mp3" length="1473840" type="audio/mpeg"/>
-      <itunes:duration>4:06</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Pop Culture Digest · Thu Sep 24, 2026</title>
-      <description>Pop Culture Digest · Thu Sep 24, 2026</description>
-      <pubDate>Thu, 24 Sep 2026 17:00:00 +0000</pubDate>
-      <guid isPermaLink="false">pop-culture-digest-2026-09-24</guid>
-      <enclosure url="https://johnmacgaffey.github.io/pop-culture-digest/episodes/2026-09-24.mp3" length="1650240" type="audio/mpeg"/>
-      <itunes:duration>4:35</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Pop Culture Digest · Mon Sep 21, 2026</title>
-      <description>Pop Culture Digest · Mon Sep 21, 2026</description>
-      <pubDate>Mon, 21 Sep 2026 17:00:00 +0000</pubDate>
-      <guid isPermaLink="false">pop-culture-digest-2026-09-21</guid>
-      <enclosure url="https://johnmacgaffey.github.io/pop-culture-digest/episodes/2026-09-21.mp3" length="1594512" type="audio/mpeg"/>
-      <itunes:duration>4:26</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Pop Culture Digest · Fri Sep 18, 2026</title>
-      <description>Pop Culture Digest · Fri Sep 18, 2026</description>
-      <pubDate>Fri, 18 Sep 2026 17:00:00 +0000</pubDate>
-      <guid isPermaLink="false">pop-culture-digest-2026-09-18</guid>
-      <enclosure url="https://johnmacgaffey.github.io/pop-culture-digest/episodes/2026-09-18.mp3" length="1441296" type="audio/mpeg"/>
-      <itunes:duration>4:00</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Pop Culture Digest · Thu Sep 17, 2026</title>
-      <description>Pop Culture Digest · Thu Sep 17, 2026</description>
-      <pubDate>Thu, 17 Sep 2026 17:00:00 +0000</pubDate>
-      <guid isPermaLink="false">pop-culture-digest-2026-09-17</guid>
-      <enclosure url="https://johnmacgaffey.github.io/pop-culture-digest/episodes/2026-09-17.mp3" length="1456128" type="audio/mpeg"/>
-      <itunes:duration>4:03</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Pop Culture Digest · Thu Sep 17, 2026</title>
-      <description>Pop Culture Digest · Thu Sep 17, 2026</description>
-      <pubDate>Thu, 17 Sep 2026 17:00:00 +0000</pubDate>
-      <guid isPermaLink="false">pop-culture-digest-2026-09-17-sample</guid>
-      <enclosure url="https://johnmacgaffey.github.io/pop-culture-digest/episodes/2026-09-17-sample.mp3" length="219024" type="audio/mpeg"/>
-      <itunes:duration>0:37</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Pop Culture Digest · Wed Sep 16, 2026</title>
-      <description>Pop Culture Digest · Wed Sep 16, 2026</description>
-      <pubDate>Wed, 16 Sep 2026 17:00:00 +0000</pubDate>
-      <guid isPermaLink="false">pop-culture-digest-2026-09-16</guid>
-      <enclosure url="https://johnmacgaffey.github.io/pop-culture-digest/episodes/2026-09-16.mp3" length="1295280" type="audio/mpeg"/>
-      <itunes:duration>3:36</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
     </item>
   </channel>
