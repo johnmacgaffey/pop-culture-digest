@@ -21,8 +21,17 @@
     <itunes:image href="https://johnmacgaffey.github.io/pop-culture-digest/cover.jpg"/>
     <atom:link href="https://johnmacgaffey.github.io/pop-culture-digest/podcast.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Pop Culture Digest · Fri Oct 16, 2026</title>
+      <description>Holmes doc opens, Soderbergh helps finish Batman 2, Netflix taps Peter Rice, U2 stadium tour, Burton-Ishiguro film, Pacino SAG honor.</description>
+      <pubDate>Fri, 16 Oct 2026 17:00:00 +0000</pubDate>
+      <guid isPermaLink="false">pop-culture-digest-2026-10-16</guid>
+      <enclosure url="https://johnmacgaffey.github.io/pop-culture-digest/episodes/2026-10-16.mp3" length="1508256" type="audio/mpeg"/>
+      <itunes:duration>4:11</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>Pop Culture Digest · Thu Oct 15, 2026</title>
-      <description>Zendaya joins Alex Garland at A24, Netflix cuts about 1,000 jobs, big TV premieres, VisionQuest, YouTube AI music labels, and Zach Bryan stadium tour.</description>
+      <description>Pop Culture Digest · Thu Oct 15, 2026</description>
       <pubDate>Thu, 15 Oct 2026 17:00:00 +0000</pubDate>
       <guid isPermaLink="false">pop-culture-digest-2026-10-15</guid>
       <enclosure url="https://johnmacgaffey.github.io/pop-culture-digest/episodes/2026-10-15.mp3" length="1450944" type="audio/mpeg"/>
